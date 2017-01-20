@@ -1,0 +1,28 @@
+/*---------------headings---------------*/
+@import "../../nakDS-core/components/heading";
+
+/*----------------Custom variables---------------------*/
+
+:root {
+    --page-title__color: var(--theme-color);
+    --page-title__font-size: 2.5em;
+    --page-title__background:  var(--wildsand);
+    --section-title__color: var(--azure);
+    --section-title__font-size: 2em;
+    --section-title__background:  var(--wildsand);
+    --text-title__color: var(--azure);
+    --text-title__font-size: 1.5em;
+    --text-title__background:  var(--wildsand); 
+}
+/*----------------clases---------------------*/
+
+.ii-page-title {
+    @mixin nak-page-title;
+}
+
+.ii-section-title {
+    @mixin nak-section-title;
+}
+.ii-text-title {
+    @mixin nak-text-title;
+}
