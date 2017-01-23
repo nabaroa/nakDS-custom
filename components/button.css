@@ -3,20 +3,21 @@
 @import "../../nakDS-core/components/button";
 
 /*----------------Custom variables---------------------*/
-:root {
+:root {  
 /*--default*/
---button__min-width: 500px;
---button__height: var(--spacing-medium);
---button__border:2px solid var(--theme-color);
---button__background:2px solid var(--theme-color);
---button__color:var(--text-color--light);
---button__font-size:var(--medium);
---button__font:var(--base-font);
+--button__min-width: 100px;
+--button__height: var(--spacing-large);
+--button__border: 2px solid var(--theme-color);
+--button__background:var(--theme-color);
+--button__color: var(--text-color);
+--button__font-size: var(--large);
+--button__font: var(--base-font);
+--button__border-radius: var(--xx-small);
 /*--hover*/
---button__background--hover:var(--text-color--light);
---button__color--hover:var(--text-color--light);
+--button__background--hover:var(--theme-color);
+--button__color--hover:var(--text-color);
 /*--neutral*/
---button__color--neutral:var(--text-color--light);
+--button__color--neutral:var(--text-color);
 --button__background--neutral:var(--text-color--light);
 
 /*--narrow*/
