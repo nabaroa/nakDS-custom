@@ -42,7 +42,7 @@
 .nak-wizard-label {
     display: block;
     margin-bottom: -6px;
-    margin-left: var(--xxlarge);
+    margin-left: var();
     @media (--medium-viewport) {
         display: none;
         margin: 0;

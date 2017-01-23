@@ -1,11 +1,30 @@
-/*---------------button---------------*/
+/*---------------Custom button---------------*/
 
+@import "../../nakDS-core/components/button";
 
 /*----------------Custom variables---------------------*/
---button-height: var(--large);
+:root {
+/*--default*/
+--button__min-width: 500px;
+--button__height: var(--spacing-medium);
+--button__border:2px solid var(--theme-color);
+--button__background:2px solid var(--theme-color);
+--button__color:var(--text-color--light);
+--button__font-size:var(--medium);
+--button__font:var(--base-font);
+/*--hover*/
+--button__background--hover:var(--text-color--light);
+--button__color--hover:var(--text-color--light);
+/*--neutral*/
+--button__color--neutral:var(--text-color--light);
+--button__background--neutral:var(--text-color--light);
 
+/*--narrow*/
+/*--naked*/
+}
 
 /*----------------Clases---------------------*/
+
 
 /*-------------------------------------*/
 
@@ -13,41 +32,13 @@
     @mixin nak-button;
 }
 
-/*.nak-button--neutral {
-    @apply --button--neutral;
+.ii-button--neutral {
+    @mixin nak-button;
+
+    background: var(--button__background--neutral);
+    color: var(--button__color--neutral);
 }
 
-.nak-button--narrow {
-    @apply --button;
+.ii-button--narrow {}
 
-    max-width: 150px;
-    height: 30px;
-    background: var(--background-color-button--theme);
-
-    @media (--small-viewport) {
-        max-width: inherit;
-    }
-}
-
-.nak-button--naked {
-    @apply --button--naked;
-}*/
-/*.nak-button--neutral {
-    @apply --button--neutral;
-}
-
-.nak-button--narrow {
-    @apply --button;
-
-    max-width: 150px;
-    height: 30px;
-    background: var(--background-color-button--theme);
-
-    @media (--small-viewport) {
-        max-width: inherit;
-    }
-}
-
-.nak-button--naked {
-    @apply --button--naked;
-}*/
+.ii-button--naked {}

@@ -1,7 +1,10 @@
 @import "../nakDS-core/utils/var.css";
+@import "../nakDS-core/utils/tokens.css";
+@import "../nakDS-core/utils/mixin";
 @import "../extra/borland";
 @import "../extra/monaki";
 @import "../extra/main-aviator";
 
-@import "../nakDS-core/utils/mixin";
+
 @import "components/heading";
+@import "components/button";
