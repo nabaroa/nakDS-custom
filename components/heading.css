@@ -4,7 +4,7 @@
 /*----------------Custom variables---------------------*/
 
 :root {
-  --page-title__color: var(--opaque);
+  --page-title__color: var(--color-opaque);
   --page-title__font-size: 2.5em;
   --page-title__background:  var(--color-wildsand);
   --section-title__color: var(--color-azure);
