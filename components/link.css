@@ -46,7 +46,7 @@ a {
     }
     &:hover {
         [class*="ii-icon"] {
-            color: var();--opaque
+            color: var(--opaque);
         }
     }
 }

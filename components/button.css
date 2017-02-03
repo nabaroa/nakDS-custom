@@ -1,45 +1,57 @@
 /*---------------Custom button---------------*/
 
-@import "../../nakDS-core/components/button";
+@import "../../nakDS-core/components/button--utils";
+@import "../tokens/tokens";
 
 /*----------------Custom variables---------------------*/
-:root {  
-/*--default*/
---button__min-width: 100px;
---button__height: var(--spacing-large);
---button__border: 2px solid var(--color-theme);
---button__background:var(--color-theme);
---button__color: var(--text-color);
---button__font-size: var(--large);
---button__font: var(--base-font);
---button__border-radius: var(--xx-small);
-/*--hover*/
---button__background--hover:var(--color-theme);
---button__color--hover:var(--text-color);
-/*--neutral*/
---button__color--neutral:var(--text-color);
---button__background--neutral:var(--text-color--light);
-
-/*--narrow*/
-/*--naked*/
+:root {
+    /*--default*/
+    --button__min-width: 100px;
+    --button__height: var(--spacing-large);
+    --button__border-width: 1px;
+    --button__border-style: solid;
+    --button__border-color: var(--color-theme);
+    --button__background: var(--color-theme);
+    --button__color: var(--text-color);
+    --button__font-size: var(--large);
+    --button__font: var(--base-font);
+    --button__border-radius: var(--x-small);
+    /*--hover*/
+    --button__background--hover: ;
+    --button__color--hover: ;
+    /*--neutral*/
+    --button__color--neutral: var(--text-color);
+    --button__background--neutral: var(--color-bare);
+    --button__border-width--neutral: 2px;
+    --button__border-style--neutral: solid;
+    --button__border-color--neutral: var(--color-neutral);
+    /*--negative*/
+    --button__color--negative: var(--text-color--light);
+    --button__background--negative: var(--color-cod-gray);
+    --button__border-width--negative: 2px;
+    --button__border-style--negative: solid;
+    --button__border-color--negative: var(--color-mine-shaft);
 }
+
 
 /*----------------Clases---------------------*/
 
-
-/*-------------------------------------*/
-
 .ii-button {
-    @mixin nak-button;
+    @apply --nak-button;
 }
 
 .ii-button--neutral {
-    @mixin nak-button;
-
-    background: var(--button__background--neutral);
-    color: var(--button__color--neutral);
+    @apply --nak-button;
+    @apply --nak-button--neutral;
 }
 
 .ii-button--narrow {}
 
 .ii-button--naked {}
+
+.ii-search__button{
+  @apply --nak-button;
+  @apply --nak-button--icon-left;
+  @apply --nak-button--neutral;
+  @apply --nak-button--big;
+}

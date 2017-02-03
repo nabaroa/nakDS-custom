@@ -1,6 +1,6 @@
 /*---------------wizard---------------*/
-
-.nak-wizard {
+@import "../../nakDS-core/variables/required-utils";
+.nak-wizard { 
     a {
         color: var(--text-color--light);
         text-decoration: none
@@ -10,13 +10,14 @@
 .nak-wizard-list {
     display: flex;
     justify-content: space-between;
+
     @media (--medium-viewport) {
         margin-bottom: var(--large);
     }
 }
 
 .nak-wizard-item {
-    @apply --wizard-item;
+    /*@apply --wizard-item;*/
 }
 
 .nak-wizard-marker {
@@ -29,6 +30,7 @@
     height: 36px;
     border-radius: 500rem;
     background: var(--pale);
+
     .fa {
         position: absolute;
         color: var(--white);
@@ -42,7 +44,8 @@
 .nak-wizard-label {
     display: block;
     margin-bottom: -6px;
-    margin-left: var();
+
+    /*margin-left: var();*/
     @media (--medium-viewport) {
         display: none;
         margin: 0;
@@ -52,6 +55,7 @@
 form {
     .has-wizard & {
         display: none;
+
         &.is-active {
             display: block;
         }

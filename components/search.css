@@ -10,6 +10,6 @@
 
 .ii-search {
     .ii-button {
-        @mixin nak-button;
+        @apply nak-button; 
     }
 }

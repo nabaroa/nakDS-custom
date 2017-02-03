@@ -9,6 +9,6 @@
 
 .ii-modal {
     .ii-button {
-        @mixin nak-button;
+        @apply nak-button;
     }
 }
